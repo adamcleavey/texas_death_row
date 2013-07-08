@@ -1,0 +1,137 @@
+<%= form_for(@execution) do |f| %>
+  <% if @execution.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@execution.errors.count, "error") %> prohibited this execution from being saved:</h2>
+
+      <ul>
+      <% @execution.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :age_at_offense %><br>
+    <%= f.text_field :age_at_offense %>
+  </div>
+  <div class="field">
+    <%= f.label :age_when_received %><br>
+    <%= f.text_field :age_when_received %>
+  </div>
+  <div class="field">
+    <%= f.label :codefendants %><br>
+    <%= f.text_field :codefendants %>
+  </div>
+  <div class="field">
+    <%= f.label :computed_age_at_offense %><br>
+    <%= f.text_field :computed_age_at_offense %>
+  </div>
+  <div class="field">
+    <%= f.label :computed_age_executed %><br>
+    <%= f.text_field :computed_age_executed %>
+  </div>
+  <div class="field">
+    <%= f.label :computed_age_recieved %><br>
+    <%= f.text_field :computed_age_recieved %>
+  </div>
+  <div class="field">
+    <%= f.label :computed_days_before_received_after_offense %><br>
+    <%= f.text_field :computed_days_before_received_after_offense %>
+  </div>
+  <div class="field">
+    <%= f.label :computed_days_between_received_and_executed %><br>
+    <%= f.text_field :computed_days_between_received_and_executed %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br>
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :date_executed %><br>
+    <%= f.text_field :date_executed %>
+  </div>
+  <div class="field">
+    <%= f.label :date_received %><br>
+    <%= f.text_field :date_received %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br>
+    <%= f.text_field :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :edu_level %><br>
+    <%= f.text_field :edu_level %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes %><br>
+    <%= f.text_field :eyes %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :info_sheet %><br>
+    <%= f.text_field :info_sheet %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_statement %><br>
+    <%= f.text_field :last_statement %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :offense_date %><br>
+    <%= f.text_field :offense_date %>
+  </div>
+  <div class="field">
+    <%= f.label :prior_occupation %><br>
+    <%= f.text_field :prior_occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :prior_record %><br>
+    <%= f.text_field :prior_record %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br>
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br>
+    <%= f.text_field :summary %>
+  </div>
+  <div class="field">
+    <%= f.label :tdcj %><br>
+    <%= f.text_field :tdcj %>
+  </div>
+  <div class="field">
+    <%= f.label :victim_info %><br>
+    <%= f.text_field :victim_info %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

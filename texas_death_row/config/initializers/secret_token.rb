@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-TexasDeathRow::Application.config.secret_key_base = '33703934b09eed30337aead5b665e1b2ef995928318832cef13a981fd8f134813fbe8dfe262e25efa223b3f5700e20be1e2aca603382c594a9160a85508380d9'
+TexasDeathRow::Application.config.secret_key_base = '92e64a61e2d38995ad326c258aa47d7d0d05174a4a20f0d59dfd7832ece47447a5e95e7342715786233186ae9eacd43427284d35cbfdf1a5bdb635e2392c3fd3'

@@ -1,0 +1,85 @@
+<h1>Listing executions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th>Age at offense</th>
+      <th>Age when received</th>
+      <th>Codefendants</th>
+      <th>Computed age at offense</th>
+      <th>Computed age executed</th>
+      <th>Computed age recieved</th>
+      <th>Computed days before received after offense</th>
+      <th>Computed days between received and executed</th>
+      <th>County</th>
+      <th>Date executed</th>
+      <th>Date received</th>
+      <th>Dob</th>
+      <th>Edu level</th>
+      <th>Eyes</th>
+      <th>First name</th>
+      <th>Gender</th>
+      <th>Height</th>
+      <th>Info sheet</th>
+      <th>Last name</th>
+      <th>Last statement</th>
+      <th>Number</th>
+      <th>Offense date</th>
+      <th>Prior occupation</th>
+      <th>Prior record</th>
+      <th>Race</th>
+      <th>Summary</th>
+      <th>Tdcj</th>
+      <th>Victim info</th>
+      <th>Weight</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @executions.each do |execution| %>
+      <tr>
+        <td><%= execution.age %></td>
+        <td><%= execution.age_at_offense %></td>
+        <td><%= execution.age_when_received %></td>
+        <td><%= execution.codefendants %></td>
+        <td><%= execution.computed_age_at_offense %></td>
+        <td><%= execution.computed_age_executed %></td>
+        <td><%= execution.computed_age_recieved %></td>
+        <td><%= execution.computed_days_before_received_after_offense %></td>
+        <td><%= execution.computed_days_between_received_and_executed %></td>
+        <td><%= execution.county %></td>
+        <td><%= execution.date_executed %></td>
+        <td><%= execution.date_received %></td>
+        <td><%= execution.dob %></td>
+        <td><%= execution.edu_level %></td>
+        <td><%= execution.eyes %></td>
+        <td><%= execution.first_name %></td>
+        <td><%= execution.gender %></td>
+        <td><%= execution.height %></td>
+        <td><%= execution.info_sheet %></td>
+        <td><%= execution.last_name %></td>
+        <td><%= execution.last_statement %></td>
+        <td><%= execution.number %></td>
+        <td><%= execution.offense_date %></td>
+        <td><%= execution.prior_occupation %></td>
+        <td><%= execution.prior_record %></td>
+        <td><%= execution.race %></td>
+        <td><%= execution.summary %></td>
+        <td><%= execution.tdcj %></td>
+        <td><%= execution.victim_info %></td>
+        <td><%= execution.weight %></td>
+        <td><%= link_to 'Show', execution %></td>
+        <td><%= link_to 'Edit', edit_execution_path(execution) %></td>
+        <td><%= link_to 'Destroy', execution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Execution', new_execution_path %>

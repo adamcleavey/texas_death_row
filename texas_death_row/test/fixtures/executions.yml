@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  age: MyString
+  age_at_offense: MyString
+  age_when_received: MyString
+  codefendants: MyString
+  computed_age_at_offense: MyString
+  computed_age_executed: MyString
+  computed_age_recieved: MyString
+  computed_days_before_received_after_offense: MyString
+  computed_days_between_received_and_executed: MyString
+  county: MyString
+  date_executed: MyString
+  date_received: MyString
+  dob: MyString
+  edu_level: MyString
+  eyes: MyString
+  first_name: MyString
+  gender: MyString
+  height: MyString
+  info_sheet: MyString
+  last_name: MyString
+  last_statement: MyString
+  number: MyString
+  offense_date: MyString
+  prior_occupation: MyString
+  prior_record: MyString
+  race: MyString
+  summary: MyString
+  tdcj: MyString
+  victim_info: MyString
+  weight: MyString
+
+two:
+  age: MyString
+  age_at_offense: MyString
+  age_when_received: MyString
+  codefendants: MyString
+  computed_age_at_offense: MyString
+  computed_age_executed: MyString
+  computed_age_recieved: MyString
+  computed_days_before_received_after_offense: MyString
+  computed_days_between_received_and_executed: MyString
+  county: MyString
+  date_executed: MyString
+  date_received: MyString
+  dob: MyString
+  edu_level: MyString
+  eyes: MyString
+  first_name: MyString
+  gender: MyString
+  height: MyString
+  info_sheet: MyString
+  last_name: MyString
+  last_statement: MyString
+  number: MyString
+  offense_date: MyString
+  prior_occupation: MyString
+  prior_record: MyString
+  race: MyString
+  summary: MyString
+  tdcj: MyString
+  victim_info: MyString
+  weight: MyString
