@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130708182257) do
+ActiveRecord::Schema.define(version: 20130709183329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,13 +37,13 @@ ActiveRecord::Schema.define(version: 20130708182257) do
     t.string   "height"
     t.string   "info_sheet"
     t.string   "last_name"
-    t.string   "last_statement"
+    t.text     "last_statement"
     t.string   "number"
     t.string   "offense_date"
     t.string   "prior_occupation"
-    t.string   "prior_record"
+    t.text     "prior_record"
     t.string   "race"
-    t.string   "summary"
+    t.text     "summary"
     t.string   "tdcj"
     t.string   "victim_info"
     t.string   "weight"

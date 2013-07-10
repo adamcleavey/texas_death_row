@@ -25,6 +25,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    addressable (2.3.5)
     arel (4.0.0)
     atomic (1.1.10)
     builder (3.1.4)
@@ -36,9 +37,21 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     erubis (2.7.0)
+    excon (0.25.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    heroku (2.39.4)
+      heroku-api (~> 0.3.7)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.13)
+      excon (~> 0.25.0)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.4)
     jbuilder (1.4.2)
       activesupport (>= 3.0.0)
@@ -47,12 +60,19 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    launchy (2.3.0)
+      addressable (~> 2.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
+    mini_portile (0.5.1)
     minitest (4.7.5)
     multi_json (1.7.7)
+    multi_xml (0.5.4)
+    netrc (0.7.7)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -74,6 +94,9 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (0.9.9)
     sass (3.2.9)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -115,8 +138,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  heroku
+  httparty
   jbuilder (~> 1.2)
   jquery-rails
+  nokogiri
   pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
