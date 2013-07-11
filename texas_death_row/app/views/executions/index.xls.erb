@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="AdTypes">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Age</Data></Cell>
+        <Cell><Data ss:Type="String">Age at offense</Data></Cell>
+        <Cell><Data ss:Type="String">Age when received</Data></Cell>
+        <Cell><Data ss:Type="String">Codefendants</Data></Cell>
+        <Cell><Data ss:Type="String">Computed age at offense</Data></Cell>
+        <Cell><Data ss:Type="String">Computed age executed</Data></Cell>
+        <Cell><Data ss:Type="String">Computed age recieved</Data></Cell>
+        <Cell><Data ss:Type="String">Computed days before received after offense</Data></Cell>
+        <Cell><Data ss:Type="String">Computed days between received and executed</Data></Cell>
+        <Cell><Data ss:Type="String">County</Data></Cell>
+        <Cell><Data ss:Type="String">Date executed</Data></Cell>
+        <Cell><Data ss:Type="String">Date received</Data></Cell>
+        <Cell><Data ss:Type="String">Dob</Data></Cell>
+        <Cell><Data ss:Type="String">Edu level</Data></Cell>
+        <Cell><Data ss:Type="String">Eyes</Data></Cell>
+        <Cell><Data ss:Type="String">First name</Data></Cell>
+        <Cell><Data ss:Type="String">Gender</Data></Cell>
+        <Cell><Data ss:Type="String">Height</Data></Cell>
+        <Cell><Data ss:Type="String">Info sheet</Data></Cell>
+        <Cell><Data ss:Type="String">Last name</Data></Cell>
+        <Cell><Data ss:Type="String">Last statement</Data></Cell>
+        <Cell><Data ss:Type="String">Number</Data></Cell>
+        <Cell><Data ss:Type="String">Offense date</Data></Cell>
+        <Cell><Data ss:Type="String">Prior occupation</Data></Cell>
+        <Cell><Data ss:Type="String">Prior record</Data></Cell>
+        <Cell><Data ss:Type="String">Race</Data></Cell>
+        <Cell><Data ss:Type="String">Summary</Data></Cell>
+        <Cell><Data ss:Type="String">Tdcj</Data></Cell>
+        <Cell><Data ss:Type="String">Victim info</Data></Cell>
+        <Cell><Data ss:Type="String">Weight</Data></Cell>
+      </Row>
+    <% @executions.each do |execution| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= execution.age %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.age_at_offense %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.age_when_received %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.codefendants %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.computed_age_at_offense %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.computed_age_executed %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.computed_age_recieved %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.computed_days_before_received_after_offense %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.computed_days_between_received_and_executed %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.county %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.date_executed %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.date_received %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.dob %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.edu_level %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.eyes %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.first_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.gender %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.height %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.info_sheet %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.last_name %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.last_statement %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.number %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.offense_date %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.prior_occupation %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.prior_record %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.race %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.summary %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.tdcj %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.victim_info %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= execution.weight %>  </Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>

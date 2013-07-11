@@ -1,3 +1,7 @@
+<% if @execution.info_sheet.include? "jpg" %>
+<img src="<%= @execution.info_sheet %>" style="float:right;">
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
 <p>

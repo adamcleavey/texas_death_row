@@ -5,6 +5,12 @@ class ExecutionsController < ApplicationController
   # GET /executions.json
   def index
     @executions = Execution.all
+		respond_to do |format|
+			format.html
+			format.csv { send_data @executions.to_csv }
+			format.xls
+			format.json { render json: @executions.to_json }
+		end
   end
 
   # GET /executions/1
