@@ -3,8 +3,9 @@
 <% if @execution.info_sheet.include? "jpg" %>
 <img src="<%= @execution.info_sheet %>" style="float:right;">
 <% end %>
-
-<%= render 'form' %>
-<button id="do_the_math" class="btn btn-primary">Do The Math!</button>
-<%= link_to 'Show', @execution %> |
-<%= link_to 'Back', executions_path %>
+<div id="form_container">
+  <%= render 'form' %>
+  <button id="do_the_math" class="btn btn-primary">Do The Math!</button>
+  <%= link_to 'Show', @execution %> |
+  <%= link_to 'Back', executions_path %>
+</div>
