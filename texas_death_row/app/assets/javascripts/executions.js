@@ -25,7 +25,7 @@ $(document).ready(function() {
   
   if ($('#executions_index_table').length) {
     var $executionTable = $("#executions_index_table").dataTable({
-      "sDom": "<'row top-tools'<'span2'l><'span6 offset4'f>r><'row'>t<'row'<'span6'i><'span6'p>>",
+      "sDom": "<'row top-tools'<'span4'l><'span6 offset2'f>r>t<'row'<'span6 offset3'p>>",
       "sPaginationType": "bootstrap",
       "aaSorting": [[3, 'asc']],
       "sZeroRecords": "No matching records found",
